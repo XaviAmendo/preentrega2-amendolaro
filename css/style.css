@@ -27,7 +27,6 @@ body{
     width: 100%;
     position: relative;
     text-align: center;
-
 }
 .index img{
     display: inline-block;
@@ -38,7 +37,6 @@ body{
     vertical-align: initial;
     box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
 }
-
 .index__img{
  
     margin: 20px 0px 20px 0px;
@@ -47,11 +45,9 @@ body{
     flex-wrap: wrap;
     gap: 15px;
    justify-content: center;
-
 }
-/**/
 .index__body{
-    margin: 20px;
+margin: 20px;
 display: grid;
 grid-template-columns: repeat (3,1fr);
 grid-template-rows: auto;
@@ -72,8 +68,6 @@ grid-template-areas:
     grid-area: descrip;
     text-align: left;
 }
-
-/**/
 .index__img img{
     width: 350px;
     height: 320px;
@@ -86,12 +80,9 @@ grid-template-areas:
     height: 320px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-
 }
 
-
 /*footer*/
-
 footer{
     background-color: #cdf195;
     padding: 10px;
@@ -99,16 +90,19 @@ footer{
     border-top: 2px solid rgb(148, 12, 10);
     color: rgb(148, 12, 10);
 }
+footer h3{
+    position: absolute;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .footers{
     text-decoration: none;
     text-align: right;
 }
-
-
 .bi-facebook , .bi-twitter , .bi-instagram{
     color: rgb(148, 12, 10);
     margin: 0px 10px 0px;
-
 }
 
 /*palabras*/
@@ -128,7 +122,7 @@ h3{
     margin: 0px 20px 10px 10px;
     font-family: "roboto";
 }
-h5{
+h4{
     position: absolute;
     padding: 15px;
     font-size: 1rem;
@@ -138,6 +132,7 @@ p{
 font-size: 20px;
 margin: 5px 30px 5px 30px;
 }
+
 /*body index*/
 .bg{
     background-image: url(../img/index4.jpeg);
@@ -149,15 +144,11 @@ margin: 5px 30px 5px 30px;
     color: whitesmoke ;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-
-
 }
 
 /*contacto*/
-
 fieldset{
     padding: 10px;
-   /* width: 40%;*/
     margin-bottom: 20px;
     margin: 20px;
     border: solid 2px rgb(148, 12, 10);
@@ -178,12 +169,16 @@ fieldset{
     margin: 20px;
     border-radius: 10px;
 }
-.contatos h3{
-    padding: 15px;
+.contatos legend{
+    padding: 10px;
 }
 .maps{
     text-align: center;
     margin: 20px;
+}
+.maps h2{
+    font-family: roboto;
+    font-size: 22px;
 }
 .maps iframe{
     border-radius: 20px;
@@ -194,7 +189,14 @@ button{
     padding: 0px 3px 0px 3px;
     border-radius: 10px;
 }
+
 /*recetas*/
+.texto1 h2{
+    font-size: 25px;
+    margin: 0px 20px 10px 10px;
+    font-family: "roboto";
+    text-align: left;
+}
 
 /*cafes*/
 .cards{
@@ -204,12 +206,11 @@ button{
     justify-content: center;
     padding: 20px;
 }
-
 .cards__body:nth-child(even){
 flex-direction: row-reverse;
 background-color: rgb(223, 239, 239);
 }
-/**/.cards__body{
+.cards__body{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -225,10 +226,15 @@ background-color: rgb(223, 239, 239);
 .cards__texto{
     align-items: center;
 }
+.cards__texto h2{
+    font-size: 25px;
+    margin: 0px 20px 10px 10px;
+    font-family: "roboto";
+    text-align: left;
+}
 .cards__texto p{
     font-size: 17px;
 }
-
 
 /*historia*/
 .historia{
@@ -243,7 +249,6 @@ background-color: rgb(223, 239, 239);
 .historia__img{
     text-align: center;
 }
-
 .carousel__box{
    display: flex;
    flex-direction: row;
@@ -252,7 +257,6 @@ background-color: rgb(223, 239, 239);
    gap:20px;
 }
 .carousel__box img{
-    /*margin: 10px;*/
     width: 350px;
     height: 320px;
     border-radius: 5px;
@@ -263,7 +267,6 @@ background-color: rgb(223, 239, 239);
     height: 320px;
     box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
     border-radius: 10px;
-
 }
 .carousel-inner{
     border-radius: 10px;
@@ -273,6 +276,7 @@ background-color: rgb(223, 239, 239);
     height: 320px;
     object-fit: cover;
 }
+
 /*FRIO NAV BOOTSTRAP*/
 .navbar{
     background-color: rgb(205, 241, 149);
@@ -280,13 +284,11 @@ background-color: rgb(223, 239, 239);
     padding: 0px;
 }
 nav ul li{
-
     border: 2px solid  rgb(148, 12, 10);
     margin: 10px;
     border-radius: 5px;
     font-weight:bold;
     font-size: 18px;
-   
 }
 .nav-link{
     color: rgb(148, 12, 10);
@@ -303,30 +305,25 @@ nav ul li{
 nav img{
     width: 87px;
     height: 87px;
-   /* position: relative;*/
 }
 .dropdown-menu{
     background-color:transparent ;
     border: transparent;
     min-width: 0rem;   
 }
-
-
 .dropdown-menu li{
     margin-top: 0px;
     background-color: #cdf195;
     padding: 5px;
     text-align: center;
-
-
 }
 .dropdown-item{
     display: inline;
     color: rgb(148, 12, 10);
     font-weight:bold;
     background-color: #cdf195 ;
-
 }
+
 /*Hover-navbar*/
 nav ul li:hover{
     background-color: rgb(148, 12, 10);
@@ -344,6 +341,7 @@ nav ul li:hover{
     color:#cdf195;
     transition: 1s;
 }
+
 /*hover button contacto*/
 button:hover{
     border-color: rgb(205, 241, 149);
@@ -351,9 +349,7 @@ button:hover{
 }
 
 
-
 /*mediaqueries*/
-
 @media only screen and (max-width:750px){
 .index__body{
     margin: 25px 20px 25px 20px;
@@ -431,8 +427,6 @@ button:hover{
     }
 }
 
-
-
 @media only screen and (max-width:350px){
     .index__body img{
         width: 200px;
@@ -482,7 +476,7 @@ button:hover{
     .contac fieldset{
         font-size: 15px;
         font-family: math;
-    }/**/
+    }
     .contatos h3{
         padding: 10px;
         font-size: 21px;
