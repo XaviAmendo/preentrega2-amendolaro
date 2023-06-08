@@ -1,0 +1,70 @@
+/*FRIO NAV BOOTSTRAP*/
+.navbar{
+    background-color: rgb(205, 241, 149);
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li{
+    border: 2px solid  rgb(148, 12, 10);
+    margin: 10px;
+    border-radius: 5px;
+    font-weight:bold;
+    font-size: 18px;
+}
+.nav-link{
+    color: rgb(148, 12, 10);
+    flex-direction: column-reverse;
+}
+.nav-link active{
+    color: rgb(148, 12, 10);
+    flex-direction: row-reverse;
+    margin-top: 0px;
+}
+.collapse{
+    flex-direction: row-reverse;
+}
+nav img{
+    width: 87px;
+    height: 87px;
+}
+.dropdown-menu{
+    background-color:transparent ;
+    border: transparent;
+    min-width: 0rem;   
+}
+.dropdown-menu li{
+    margin-top: 0px;
+    background-color: #cdf195;
+    padding: 5px;
+    text-align: center;
+}
+.dropdown-item{
+    display: inline;
+    color: rgb(148, 12, 10);
+    font-weight:bold;
+    background-color: #cdf195 ;
+}
+
+/*Hover-navbar*/
+nav ul li:hover{
+    background-color: rgb(148, 12, 10);
+    transition: 1s;
+}
+.nav-link:hover{
+    color:#cdf195;
+    transition: 1s;
+}
+.dropdown-item:hover{
+    background-color: rgb(148, 12, 10);
+    transition: 1s;
+}
+.dropdown-item:hover{
+    color:#cdf195;
+    transition: 1s;
+}
+
+/*hover button contacto*/
+button:hover{
+    border-color: rgb(205, 241, 149);
+    color: rgb(148, 12, 10);
+}

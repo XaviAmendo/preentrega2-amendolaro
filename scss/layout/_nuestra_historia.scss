@@ -1,0 +1,40 @@
+/*historia*/
+.historia{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.historia p{
+    margin: 10px;
+}
+
+.historia__img{
+    text-align: center;
+}
+.carousel__box{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap:20px;
+}
+.carousel__box img{
+    width: 350px;
+    height: 320px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 1px $main-color;
+}
+.carousel-1{
+    width: 350px;
+    height: 320px;
+    box-shadow: 5px 5px 10px 1px $main-color;
+    border-radius: 10px;
+}
+.carousel-inner{
+    border-radius: 10px;
+}
+.carousel img{
+    width: 350px;
+    height: 320px;
+    object-fit: cover;
+}

@@ -18,6 +18,98 @@ body {
   background-color: whitesmoke;
 }
 
+/* main */
+.index {
+  background-color: whitesmoke;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.index img {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  border-radius: 5px;
+  margin: 10px;
+  vertical-align: initial;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+
+.index__img {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.index__body {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo img" "descrip descrip img" "descrip descrip img";
+}
+
+.index__body img {
+  grid-area: img;
+}
+
+.index__body h3 {
+  grid-area: titulo;
+  text-align: left;
+  margin: 10px 0px 25px 5px;
+}
+
+.index__body p {
+  grid-area: descrip;
+  text-align: left;
+}
+
+.index__img img {
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+
+.index__img iframe {
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+
+/*footer*/
+footer {
+  background-color: #cdf195;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  border-top: 2px solid rgb(148, 12, 10);
+  color: rgb(148, 12, 10);
+}
+
+footer h3 {
+  position: absolute;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.footers {
+  text-decoration: none;
+  text-align: right;
+}
+
+.bi-facebook, .bi-twitter, .bi-instagram {
+  color: rgb(148, 12, 10);
+  margin: 0px 10px 0px;
+}
+
 /*palabras*/
 h1 {
   font-family: "Lobster";
@@ -48,6 +140,169 @@ h4 {
 p {
   font-size: 20px;
   margin: 5px 30px 5px 30px;
+}
+
+/*body index*/
+.bg {
+  background-image: url(../img/index4.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+
+/*contacto*/
+fieldset {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: 20px;
+  border: solid 2px rgb(148, 12, 10);
+  border-radius: 10px;
+}
+
+.contac {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bi-telephone-forward-fill, .bi-whatsapp, .bi-envelope-at-fill {
+  color: rgb(148, 12, 10);
+}
+
+.contatos {
+  border: solid 2px rgb(148, 12, 10);
+  height: 100%;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.contatos legend {
+  padding: 10px;
+}
+
+.maps {
+  text-align: center;
+  margin: 20px;
+}
+
+.maps h2 {
+  font-family: roboto;
+  font-size: 22px;
+}
+
+.maps iframe {
+  border-radius: 20px;
+  border: solid 2px rgb(148, 12, 10);
+}
+
+button {
+  border-color: rgb(148, 12, 10);
+  padding: 0px 3px 0px 3px;
+  border-radius: 10px;
+}
+
+/*recetas*/
+.texto1 h2 {
+  font-size: 25px;
+  margin: 0px 20px 10px 10px;
+  font-family: "roboto";
+  text-align: left;
+}
+
+/*cafes*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cards__body:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: rgb(223, 239, 239);
+}
+
+.cards__body {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.cards__body img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cards__texto {
+  align-items: center;
+}
+
+.cards__texto h2 {
+  font-size: 25px;
+  margin: 0px 20px 10px 10px;
+  font-family: "roboto";
+  text-align: left;
+}
+
+.cards__texto p {
+  font-size: 17px;
+}
+
+/*historia*/
+.historia {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.historia p {
+  margin: 10px;
+}
+
+.historia__img {
+  text-align: center;
+}
+
+.carousel__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.carousel__box img {
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+}
+
+.carousel-1 {
+  width: 350px;
+  height: 320px;
+  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
+  border-radius: 10px;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.carousel img {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
 }
 
 /*FRIO NAV BOOTSTRAP*/
@@ -130,267 +385,6 @@ nav ul li:hover {
 button:hover {
   border-color: rgb(205, 241, 149);
   color: rgb(148, 12, 10);
-}
-
-/*footer*/
-footer {
-  background-color: #cdf195;
-  padding: 10px;
-  border-radius: 20px 20px 0px 0px;
-  border-top: 2px solid rgb(148, 12, 10);
-  color: rgb(148, 12, 10);
-}
-
-footer h3 {
-  position: absolute;
-  padding: 15px;
-  font-size: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.footers {
-  text-decoration: none;
-  text-align: right;
-}
-
-.bi-facebook, .bi-twitter, .bi-instagram {
-  color: rgb(148, 12, 10);
-  margin: 0px 10px 0px;
-}
-
-.index {
-  background-color: whitesmoke;
-  display: inline-block;
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.index img {
-  display: inline-block;
-  width: 450px;
-  height: 450px;
-  border-radius: 5px;
-  margin: 10px;
-  vertical-align: initial;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-}
-
-.index__img {
-  margin: 20px 0px 20px 0px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.index__body {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat 3, 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "titulo titulo img" "descrip descrip img" "descrip descrip img";
-}
-
-.index__body img {
-  grid-area: img;
-}
-
-.index__body h3 {
-  grid-area: titulo;
-  text-align: left;
-  margin: 10px 0px 25px 5px;
-}
-
-.index__body p {
-  grid-area: descrip;
-  text-align: left;
-}
-
-.index__img img {
-  width: 350px;
-  height: 320px;
-  border-radius: 5px;
-  object-fit: cover;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-}
-
-.index__img iframe {
-  width: 350px;
-  height: 320px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-}
-
-/*body index*/
-.bg {
-  background-image: url(../img/index4.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 100px;
-  text-align: center;
-  color: whitesmoke;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-}
-
-/*historia*/
-.historia {
-  margin: 20px;
-  font-size: 20px;
-}
-
-.historia p {
-  margin: 10px;
-}
-
-.historia__img {
-  text-align: center;
-}
-
-.carousel__box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-
-.carousel__box img {
-  width: 350px;
-  height: 320px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-}
-
-.carousel-1 {
-  width: 350px;
-  height: 320px;
-  box-shadow: 5px 5px 10px 1px rgb(80, 9, 8);
-  border-radius: 10px;
-}
-
-.carousel-inner {
-  border-radius: 10px;
-}
-
-.carousel img {
-  width: 350px;
-  height: 320px;
-  object-fit: cover;
-}
-
-/*cafes*/
-.cards {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  padding: 20px;
-}
-
-.cards__body:nth-child(even) {
-  flex-direction: row-reverse;
-  background-color: rgb(223, 239, 239);
-}
-
-.cards__body {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.cards__body img {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.cards__texto {
-  align-items: center;
-}
-
-.cards__texto h2 {
-  font-size: 25px;
-  margin: 0px 20px 10px 10px;
-  font-family: "Roboto";
-  text-align: left;
-}
-
-.cards__texto p {
-  font-size: 17px;
-}
-
-/*recetas*/
-.texto1 h2 {
-  font-size: 25px;
-  margin: 0px 20px 10px 10px;
-  font-family: "$font";
-  text-align: left;
-}
-
-.texto1 h2 {
-  font-size: 25px;
-  margin: 0px 20px 10px 10px;
-  font-family: "Roboto";
-  text-align: left;
-}
-
-/*contacto*/
-fieldset {
-  padding: 10px;
-  margin-bottom: 20px;
-  margin: 20px;
-  border: solid 2px rgb(148, 12, 10);
-  border-radius: 10px;
-}
-
-.contac {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.bi-telephone-forward-fill, .bi-whatsapp, .bi-envelope-at-fill {
-  color: rgb(148, 12, 10);
-}
-
-.contatos {
-  border: solid 2px rgb(148, 12, 10);
-  height: 100%;
-  margin: 20px;
-  border-radius: 10px;
-}
-
-.contatos legend {
-  padding: 10px;
-}
-
-.maps {
-  text-align: center;
-  margin: 20px;
-}
-
-.maps h2 {
-  font-family: roboto;
-  font-size: 22px;
-}
-
-.maps iframe {
-  border-radius: 20px;
-  border: solid 2px rgb(148, 12, 10);
-}
-
-button {
-  border-color: rgb(148, 12, 10);
-  padding: 0px 3px 0px 3px;
-  border-radius: 10px;
 }
 
 /*mediaqueries*/

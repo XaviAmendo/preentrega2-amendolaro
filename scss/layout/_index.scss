@@ -1,0 +1,72 @@
+.index{
+    background-color: whitesmoke;
+       display: inline-block;
+       width: 100%;
+       position: relative;
+       text-align: center;
+   }
+   .index img{
+       display: inline-block;
+       width: 450px;
+       height: 450px;
+       border-radius: 5px;
+       margin: 10px;
+       vertical-align: initial;
+       box-shadow: 5px 5px 10px 1px $main-color;
+   }
+   .index__img{
+    
+       margin: 20px 0px 20px 0px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       gap: 15px;
+      justify-content: center;
+   }
+   .index__body{
+   margin: 20px;
+   display: grid;
+   grid-template-columns: repeat (3,1fr);
+   grid-template-rows: auto;
+   grid-template-areas: 
+   'titulo titulo img'
+   'descrip descrip img'
+   'descrip descrip img'
+   }
+   .index__body img{
+       grid-area: img;
+   }
+   .index__body h3{
+       grid-area: titulo;
+       text-align: left;
+       margin: 10px 0px 25px 5px;
+   }
+   .index__body p{
+       grid-area: descrip;
+       text-align: left;
+   }
+   .index__img img{
+       width: 350px;
+       height: 320px;
+       border-radius: 5px;
+       object-fit: cover;
+       box-shadow: 5px 5px 10px 1px $main-color;
+   }
+   .index__img iframe{
+       width: 350px;
+       height: 320px;
+       border-radius: 5px;
+       box-shadow: 5px 5px 10px 1px $main-color;
+   }
+   /*body index*/
+.bg{
+    background-image: url(../img/index4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+    text-align: center;
+    color: whitesmoke ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px $main-color;
+}

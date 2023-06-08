@@ -1,0 +1,43 @@
+/*contacto*/
+fieldset{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 20px;
+    border: solid 2px $third-color;
+    border-radius: 10px;
+}
+.contac{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bi-telephone-forward-fill , .bi-whatsapp , .bi-envelope-at-fill{
+    color:$third-color
+}
+.contatos{
+    border: solid 2px $third-color;
+    height: 100%;
+    margin: 20px;
+    border-radius: 10px;
+}
+.contatos legend{
+    padding: 10px;
+}
+.maps{
+    text-align: center;
+    margin: 20px;
+}
+.maps h2{
+    font-family: $font;
+    font-size: 22px;
+}
+.maps iframe{
+    border-radius: 20px;
+    border: solid 2px $third-color;
+}
+button{
+    border-color: $third-color;
+    padding: 0px 3px 0px 3px;
+    border-radius: 10px;
+}
